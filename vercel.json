@@ -1,15 +1,7 @@
 {
-  "routes": [
-    {
-      "src": "/_root.tsx",
-      "dest": "/index.tsx"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
-    }
-  ]
+  "version": 2,
+  "buildCommand": "bun run build",
+  "installCommand": "bun install",
+  "framework": null,
+  "outputDirectory": ".output/public"
 }
