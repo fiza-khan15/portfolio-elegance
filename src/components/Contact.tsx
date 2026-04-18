@@ -44,6 +44,7 @@ export function Contact() {
             <div className="flex items-center gap-6">
               <a href="#" className="hover:text-primary-foreground transition-colors">LinkedIn</a>
               <a href="#" className="hover:text-primary-foreground transition-colors">Instagram</a>
+              <a href="#" className="hover:text-primary-foreground transition-colors">GitHub</a>
             </div>
             <span className="tabular-nums">© 2026 — All rights reserved</span>
           </div>
