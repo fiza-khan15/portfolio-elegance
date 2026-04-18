@@ -1,3 +1,5 @@
+import { SiReact, SiNextdotjs, SiSupabase, SiVercel, SiPython, SiTailwindcss } from "react-icons/si";
+
 export function Hero() {
   return (
     <section id="top" className="relative pt-40 pb-28 lg:pt-52 lg:pb-40 overflow-hidden">
