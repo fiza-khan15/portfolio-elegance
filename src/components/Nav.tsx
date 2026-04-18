@@ -4,9 +4,8 @@ export function Nav() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 group">
           <div className="h-8 w-8 rounded-full bg-charcoal flex items-center justify-center text-primary-foreground font-display text-sm">
-            M
+            F
           </div>
-          <span className="font-display text-lg tracking-tight">Mason Reed</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#work" className="hover:text-foreground transition-colors">Work</a>
