@@ -1,15 +1,15 @@
 const stats = [
-  { num: "08", label: "Years building for the web" },
-  { num: "120+", label: "Projects shipped end-to-end" },
-  { num: "32", label: "Long-term studio partners" },
-  { num: "100%", label: "Founder-led, no agency overhead" },
+  { num: "01", label: "Technical Engineering" },
+  { num: "02", label: "Data & SEO Analytics" },
+  { num: "03", label: "Direct Partnership" },
+  { num: "04", label: "Business-Driven Systems" },
 ];
 
 const points = [
-  "You work directly with me — no account managers, no handoffs.",
-  "Fixed scope, fixed timeline, no surprise invoices at the end.",
-  "Every site ships with documentation and a 30-day warranty.",
-  "Built on modern, vendor-free tech you actually own.",
+  "You work directly with the engineer — no account managers, no handoffs.",
+  "Fixed scope and fixed timelines — no surprise invoices at the end.",
+  "Every site ships with data-driven optimization and a performance audit.",
+  "Modern, vendor-free tech stacks that you actually own.",
 ];
 
 export function WhyMe() {

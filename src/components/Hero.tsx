@@ -9,31 +9,26 @@ export function Hero() {
         </div>
 
         <h1 className="font-display text-[14vw] sm:text-7xl lg:text-[8.5rem] leading-[0.95] tracking-tight text-balance">
-          Crafting digital
-          <br />
-          <span className="italic font-light text-muted-foreground">experiences</span> that
-          <br />
-          actually convert.
+          Fiza Khan
         </h1>
 
         <p className="mt-10 max-w-xl mx-auto text-base lg:text-lg text-muted-foreground text-balance">
-          I'm Mason — an independent web developer building thoughtful,
-          high-performance websites for ambitious founders and studios.
+          I build high-performance digital products and experiences for brands that value precision.
         </p>
 
         <div className="mt-12 flex items-center justify-center gap-4">
           <a
-            href="#contact"
+            href="#work"
             className="inline-flex items-center gap-2 rounded-full bg-charcoal text-primary-foreground px-7 py-4 text-sm font-medium hover:opacity-90 transition-all hover:scale-[1.02] shadow-card-hover"
           >
-            Start a project
+            See Recent Work
             <span aria-hidden>→</span>
           </a>
           <a
-            href="#work"
+            href="#contact"
             className="inline-flex items-center gap-2 rounded-full border border-soft-border bg-background text-foreground px-7 py-4 text-sm font-medium hover:bg-surface transition-colors"
           >
-            See recent work
+            Start a project
           </a>
         </div>
 
