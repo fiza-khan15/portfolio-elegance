@@ -9,17 +9,17 @@ const services = [
   {
     icon: Code2,
     title: "Development",
-    desc: "Pixel-precise React, Next.js & TanStack builds that scale cleanly.",
+    desc: "Pixel-precise React & Next.js builds that scale cleanly.",
   },
   {
     icon: Sparkles,
-    title: "Brand Systems",
-    desc: "Visual identity, typography pairings, and component libraries.",
+    title: "Performance",
+    desc: "SEO-driven optimization and sub-second load times by default.",
   },
   {
     icon: Gauge,
-    title: "Performance",
-    desc: "Audit, optimize, and ship sub-second load times by default.",
+    title: "Brand Systems",
+    desc: "Visual identity, typography pairings, and component libraries.",
   },
 ];
 

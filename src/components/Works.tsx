@@ -7,9 +7,9 @@ import work5 from "@/assets/work-5.jpg";
 import work6 from "@/assets/work-6.jpg";
 
 const projects = [
-  { title: "Northwind Studio", category: "Brand · Web Design", year: "2025", img: work1 },
-  { title: "Halo Mobile", category: "Product · Mobile App", year: "2025", img: work2 },
-  { title: "Editorial Quarterly", category: "Publishing", year: "2024", img: work3 },
+  { title: "UNFOLD Agency", category: "Full-Stack Development", year: "2025", img: work1 },
+  { title: "Cinder & Bean", category: "Boutique E-commerce", year: "2025", img: work2 },
+  { title: "Élodie Laurent", category: "Editorial Design", year: "2024", img: work3 },
   { title: "Atrium Workspace", category: "Architecture", year: "2024", img: work4 },
   { title: "Pulse Analytics", category: "SaaS Dashboard", year: "2024", img: work5 },
   { title: "Promote Apparel", category: "E-commerce", year: "2023", img: work6 },
