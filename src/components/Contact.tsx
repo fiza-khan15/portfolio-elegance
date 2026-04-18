@@ -37,14 +37,13 @@ export function Contact() {
           <div className="mt-24 lg:mt-32 pt-10 border-t border-primary-foreground/10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-sm text-primary-foreground/60">
             <div className="flex items-center gap-3">
               <div className="h-8 w-8 rounded-full bg-primary-foreground/10 flex items-center justify-center font-display">
-                M
+                F
               </div>
-              <span>Mason Reed — Independent Developer</span>
+              <span>Fiza Khan — Independent Developer</span>
             </div>
             <div className="flex items-center gap-6">
-              <a href="#" className="hover:text-primary-foreground transition-colors">Twitter</a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">Read.cv</a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">GitHub</a>
+              <a href="#" className="hover:text-primary-foreground transition-colors">LinkedIn</a>
+              <a href="#" className="hover:text-primary-foreground transition-colors">Instagram</a>
             </div>
             <span className="tabular-nums">© 2026 — All rights reserved</span>
           </div>
