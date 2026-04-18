@@ -32,12 +32,14 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="mt-24 flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-xs uppercase tracking-[0.2em] text-muted-foreground/70">
-          <span>Featured in</span>
-          <span className="font-display text-base normal-case tracking-normal text-foreground/60">Awwwards</span>
-          <span className="font-display text-base normal-case tracking-normal text-foreground/60">Sitestir</span>
-          <span className="font-display text-base normal-case tracking-normal text-foreground/60">Godly</span>
-          <span className="font-display text-base normal-case tracking-normal text-foreground/60">Typewolf</span>
+        <div className="mt-24 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 text-xs uppercase tracking-[0.2em] text-muted-foreground/70">
+          <span>Core stack</span>
+          <SiReact className="h-6 w-6 text-foreground/60 hover:text-foreground transition-colors" title="React" />
+          <SiNextdotjs className="h-6 w-6 text-foreground/60 hover:text-foreground transition-colors" title="Next.js" />
+          <SiSupabase className="h-6 w-6 text-foreground/60 hover:text-foreground transition-colors" title="Supabase" />
+          <SiVercel className="h-6 w-6 text-foreground/60 hover:text-foreground transition-colors" title="Vercel" />
+          <SiPython className="h-6 w-6 text-foreground/60 hover:text-foreground transition-colors" title="Python" />
+          <SiTailwindcss className="h-6 w-6 text-foreground/60 hover:text-foreground transition-colors" title="Tailwind CSS" />
         </div>
       </div>
     </section>
