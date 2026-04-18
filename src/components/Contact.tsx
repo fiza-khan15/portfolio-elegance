@@ -42,9 +42,9 @@ export function Contact() {
               <span>Fiza Khan — Independent Developer</span>
             </div>
             <div className="flex items-center gap-6">
-              <a href="#" className="hover:text-primary-foreground transition-colors">LinkedIn</a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">Instagram</a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">GitHub</a>
+              <a href="https://www.linkedin.com/in/fiza-kh/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">LinkedIn</a>
+              <a href="https://www.instagram.com/fzk.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">Instagram</a>
+              <a href="https://github.com/fiza-khan15" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">GitHub</a>
             </div>
             <span className="tabular-nums">© 2026 — All rights reserved</span>
           </div>
