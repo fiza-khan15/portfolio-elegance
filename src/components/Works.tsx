@@ -5,10 +5,10 @@ import work3 from "@/assets/work-3.jpg";
 import work4 from "@/assets/work-4.jpg";
 
 const projects = [
-  { title: "UNFOLD Agency", category: "Full-Stack Development", year: "2025", img: work1 },
-  { title: "Cinder & Bean", category: "Boutique E-commerce", year: "2025", img: work2 },
-  { title: "Élodie Laurent", category: "Editorial Design", year: "2024", img: work3 },
-  { title: "Fesign CAD Analytics", category: "Industrial Engineering / SaaS", year: "2024", img: work4 },
+  { title: "UNFOLD Agency", category: "Full-Stack Development", year: "2025", img: work1, url: "https://unfold-high-fashion-agency.vercel.app/" },
+  { title: "Cinder & Bean", category: "Boutique E-commerce", year: "2025", img: work2, url: "https://cinderbean.vercel.app/" },
+  { title: "Élodie Laurent", category: "Editorial Design", year: "2024", img: work3, url: "https://weddingphotographer-zeta.vercel.app/" },
+  { title: "Fesign CAD Analytics", category: "Industrial Engineering / SaaS", year: "2024", img: work4, url: "https://fesgin-app.onrender.com/" },
 ];
 
 export function Works() {
@@ -36,7 +36,9 @@ export function Works() {
           {projects.map((p) => (
             <a
               key={p.title}
-              href="#"
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative block rounded-3xl bg-surface border border-soft-border overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:-translate-y-1"
             >
               <div className="aspect-[4/3] overflow-hidden bg-surface-deep">
