@@ -8,7 +8,7 @@ const projects = [
   { title: "UNFOLD Agency", category: "Full-Stack Development", year: "2025", img: work1 },
   { title: "Cinder & Bean", category: "Boutique E-commerce", year: "2025", img: work2 },
   { title: "Élodie Laurent", category: "Editorial Design", year: "2024", img: work3 },
-  { title: "Atrium Workspace", category: "Architecture", year: "2024", img: work4 },
+  { title: "Fesign CAD Analytics", category: "Industrial Engineering / SaaS", year: "2024", img: work4 },
 ];
 
 export function Works() {
