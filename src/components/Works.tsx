@@ -24,12 +24,6 @@ export function Works() {
               A small gallery of <span className="italic font-light text-muted-foreground">recent</span> projects.
             </h2>
           </div>
-          <a
-            href="#contact"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1"
-          >
-            View archive <ArrowUpRight className="h-4 w-4" />
-          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
