@@ -25,13 +25,13 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-24 lg:py-32 border-t border-soft-border">
+    <section id="services" aria-labelledby="services-heading" className="py-24 lg:py-32 border-t border-soft-border">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-2xl mb-16">
           <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
             Services
           </p>
-          <h2 className="font-display text-5xl lg:text-6xl tracking-tight text-balance">
+          <h2 id="services-heading" className="font-display text-5xl lg:text-6xl tracking-tight text-balance">
             What I do <span className="italic font-light text-muted-foreground">best.</span>
           </h2>
         </div>
