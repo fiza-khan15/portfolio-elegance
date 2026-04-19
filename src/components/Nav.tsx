@@ -2,12 +2,13 @@ export function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/70 border-b border-soft-border/60">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-16 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 group">
-          <div className="h-8 w-8 rounded-full bg-charcoal flex items-center justify-center text-primary-foreground font-display text-sm">
+        <a href="#top" aria-label="Fiza Khan — Home" className="flex items-center gap-2 group">
+          <div className="h-8 w-8 rounded-full bg-charcoal flex items-center justify-center text-primary-foreground font-display text-sm" aria-hidden="true">
             F
           </div>
+          <span className="sr-only">Fiza Khan</span>
         </a>
-        <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
+        <nav aria-label="Primary" className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#work" className="hover:text-foreground transition-colors">Work</a>
           <a href="#services" className="hover:text-foreground transition-colors">Services</a>
           <a href="#why" className="hover:text-foreground transition-colors">About</a>

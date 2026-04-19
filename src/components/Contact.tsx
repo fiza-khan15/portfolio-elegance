@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="px-4 sm:px-6 lg:px-8 pb-8">
+    <footer id="contact" aria-labelledby="contact-heading" className="px-4 sm:px-6 lg:px-8 pb-8">
       <div className="relative mx-auto max-w-[1400px] rounded-[2.5rem] lg:rounded-[3rem] bg-charcoal text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 grain opacity-[0.06] pointer-events-none" />
         <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[120%] h-[120%] bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.08),transparent_60%)] pointer-events-none" />
@@ -12,7 +12,7 @@ export function Contact() {
             Let's build something
           </p>
 
-          <h2 className="font-display text-[12vw] sm:text-7xl lg:text-[10rem] leading-[0.9] tracking-tight max-w-5xl text-balance">
+          <h2 id="contact-heading" className="font-display text-[12vw] sm:text-7xl lg:text-[10rem] leading-[0.9] tracking-tight max-w-5xl text-balance">
             Got an idea?
             <br />
             <span className="italic font-light text-primary-foreground/70">Let's make it real.</span>
@@ -41,15 +41,15 @@ export function Contact() {
               </div>
               <span>Fiza Khan — Independent Developer</span>
             </div>
-            <div className="flex items-center gap-6">
-              <a href="https://www.linkedin.com/in/fiza-kh/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">LinkedIn</a>
-              <a href="https://www.instagram.com/fzk.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">Instagram</a>
-              <a href="https://github.com/fiza-khan15" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">GitHub</a>
-            </div>
+            <nav aria-label="Social" className="flex items-center gap-6">
+              <a href="https://www.linkedin.com/in/fiza-kh/" target="_blank" rel="noopener noreferrer" aria-label="Fiza Khan on LinkedIn" className="hover:text-primary-foreground transition-colors">LinkedIn</a>
+              <a href="https://www.instagram.com/fzk.dev/" target="_blank" rel="noopener noreferrer" aria-label="Fiza Khan on Instagram" className="hover:text-primary-foreground transition-colors">Instagram</a>
+              <a href="https://github.com/fiza-khan15" target="_blank" rel="noopener noreferrer" aria-label="Fiza Khan on GitHub" className="hover:text-primary-foreground transition-colors">GitHub</a>
+            </nav>
             <span className="tabular-nums">© 2026 — All rights reserved</span>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }

@@ -14,14 +14,14 @@ const points = [
 
 export function WhyMe() {
   return (
-    <section id="why" className="py-24 lg:py-32 border-t border-soft-border bg-surface">
+    <section id="why" aria-labelledby="why-heading" className="py-24 lg:py-32 border-t border-soft-border bg-surface">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20">
           <div className="lg:col-span-5">
             <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
               Why work with me
             </p>
-            <h2 className="font-display text-5xl lg:text-6xl tracking-tight text-balance">
+            <h2 id="why-heading" className="font-display text-5xl lg:text-6xl tracking-tight text-balance">
               Independent.
               <br />
               <span className="italic font-light text-muted-foreground">Obsessive.</span>

@@ -2,7 +2,7 @@ import { SiReact, SiNextdotjs, SiSupabase, SiVercel, SiPython, SiTailwindcss } f
 
 export function Hero() {
   return (
-    <section id="top" className="relative pt-40 pb-28 lg:pt-52 lg:pb-40 overflow-hidden">
+    <section id="top" aria-labelledby="hero-heading" className="relative pt-40 pb-28 lg:pt-52 lg:pb-40 overflow-hidden">
       <div className="absolute inset-0 grain opacity-40 pointer-events-none" />
       <div className="mx-auto max-w-6xl px-6 lg:px-10 text-center relative">
         <div className="inline-flex items-center gap-2 rounded-full border border-soft-border bg-surface px-3 py-1 text-xs text-muted-foreground mb-8">
@@ -10,12 +10,12 @@ export function Hero() {
           Available for new projects · Q3 2026
         </div>
 
-        <h1 className="font-display text-[14vw] sm:text-7xl lg:text-[8.5rem] leading-[0.95] tracking-tight text-balance">
+        <h1 id="hero-heading" className="font-display text-[14vw] sm:text-7xl lg:text-[8.5rem] leading-[0.95] tracking-tight text-balance">
           Fiza Khan
         </h1>
 
         <p className="mt-10 max-w-xl mx-auto text-base lg:text-lg text-muted-foreground text-balance">
-          I build high-performance digital products and experiences for brands that value precision.
+          Independent web developer building high-performance digital products and experiences for brands that value precision.
         </p>
 
         <div className="mt-12 flex items-center justify-center gap-4">

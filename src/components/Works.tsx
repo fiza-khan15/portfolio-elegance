@@ -13,14 +13,14 @@ const projects = [
 
 export function Works() {
   return (
-    <section id="work" className="py-24 lg:py-32">
+    <section id="work" aria-labelledby="work-heading" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex items-end justify-between mb-14 flex-wrap gap-6">
           <div>
             <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
               Selected Work · 2023—2026
             </p>
-            <h2 className="font-display text-5xl lg:text-6xl tracking-tight max-w-2xl text-balance">
+            <h2 id="work-heading" className="font-display text-5xl lg:text-6xl tracking-tight max-w-2xl text-balance">
               A small gallery of <span className="italic font-light text-muted-foreground">recent</span> projects.
             </h2>
           </div>
@@ -33,18 +33,19 @@ export function Works() {
               href={p.url}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${p.title} — ${p.category} (opens in new tab)`}
               className="group relative block rounded-3xl bg-surface border border-soft-border overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:-translate-y-1"
             >
-              <div className="aspect-[4/3] overflow-hidden bg-surface-deep">
+              <article className="aspect-[4/3] overflow-hidden bg-surface-deep">
                 <img
                   src={p.img}
-                  alt={p.title}
+                  alt={`${p.title} — ${p.category} project preview`}
                   loading="lazy"
                   width={1024}
                   height={768}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                 />
-              </div>
+              </article>
 
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors duration-500 flex items-center justify-center">
