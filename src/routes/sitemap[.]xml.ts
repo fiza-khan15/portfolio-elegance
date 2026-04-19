@@ -1,17 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/sitemap.xml")({
-  server: {
-    handlers: {
-      GET: async () => {
-        const baseUrl = "https://mehmettahatmert.com";
-        const today = new Date().toISOString().split("T")[0];
+export const Route = createFileRoute("/sitemap[.]xml")({
+  component: SitemapXml,
+});
 
-        const pages = [
-          { path: "", priority: "1.0", changefreq: "weekly" },
-        ];
+function SitemapXml() {
+  const baseUrl = "https://mehmettahatmert.com";
+  const today = new Date().toISOString().split("T")[0];
 
-        const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  const pages = [{ path: "", priority: "1.0", changefreq: "weekly" }];
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages
   .map(
@@ -25,13 +24,9 @@ ${pages
   .join("\n")}
 </urlset>`;
 
-        return new Response(sitemap, {
-          headers: {
-            "Content-Type": "application/xml",
-            "Cache-Control": "public, max-age=3600",
-          },
-        });
-      },
-    },
-  },
-});
+  return (
+    <pre style={{ margin: 0, padding: 20, fontFamily: "monospace", whiteSpace: "pre-wrap" }}>
+      {sitemap}
+    </pre>
+  );
+}
