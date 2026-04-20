@@ -1,7 +1,14 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "tanstack-start-app",
-  "compatibility_date": "2025-09-24",
+  "name": "portfolio-elegance", // Ensure this matches your Cloudflare project name
+  "compatibility_date": "2026-04-20", 
   "compatibility_flags": ["nodejs_compat"],
-  "main": "@tanstack/react-start/server-entry",
+  "main": ".output/server/index.mjs", // Point to the bundled server engine
+  "assets": {
+    "directory": ".output/public", // Point to the bundled frontend (CSS/JS/Images)
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
 }
