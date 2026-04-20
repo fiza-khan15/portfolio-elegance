@@ -1,11 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "portfolio-elegance", // Ensure this matches your Cloudflare project name
+  "name": "portfolio-elegance",
   "compatibility_date": "2026-04-20", 
   "compatibility_flags": ["nodejs_compat"],
-  "main": ".output/server/index.mjs", // Point to the bundled server engine
+  "main": ".output/server/index.mjs",
   "assets": {
-    "directory": ".output/public", // Point to the bundled frontend (CSS/JS/Images)
+    "directory": ".output/public", 
     "binding": "ASSETS"
   },
   "observability": {
