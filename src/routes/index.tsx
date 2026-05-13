@@ -19,7 +19,7 @@ const personJsonLd = {
   url: SITE_URL,
   jobTitle: "Independent Web Developer & Designer",
   description: DESCRIPTION,
-  email: "mailto:fizanazimkhan@gmail.com",
+  email: "mailto:fiza.tech@outlook.com",
   image: `${SITE_URL}${ogImage}`,
   sameAs: [
     "https://www.linkedin.com/in/fiza-kh/",

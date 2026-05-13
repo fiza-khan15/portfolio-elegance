@@ -20,17 +20,17 @@ export function Contact() {
 
           <div className="mt-14 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-10">
             <a
-              href="mailto:fizanazimkhan@gmail.com"
+              href="mailto:fiza.tech@outlook.com"
               className="group inline-flex items-center gap-3 rounded-full bg-background text-foreground px-8 py-5 text-base font-medium hover:bg-surface transition-colors"
             >
               Email Me
               <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <a
-              href="mailto:fizanazimkhan@gmail.com"
+              href="mailto:fiza.tech@outlook.com"
               className="text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors"
             >
-              fizanazimkhan@gmail.com
+              fiza.tech@outlook.com
             </a>
           </div>
 
