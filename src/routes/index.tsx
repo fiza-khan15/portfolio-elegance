@@ -2,31 +2,36 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Works } from "@/components/Works";
-import { Services } from "@/components/Services";
-import { WhyMe } from "@/components/WhyMe";
+import { Skills } from "@/components/Skills";
+import { About } from "@/components/About";
+import { Process } from "@/components/Process";
 import { Contact } from "@/components/Contact";
+import { SITE } from "@/data/site";
 import ogImage from "@/assets/work-1.jpg";
 
-const SITE_URL = "https://2b163f84-2c3d-48d8-897e-3ebbabfbcc2f.lovable.app";
-const TITLE = "Fiza Khan — Independent Web Developer & Designer";
+const TITLE = `${SITE.name} — UI/UX & Product Designer`;
 const DESCRIPTION =
-  "Fiza Khan is an independent web developer building high-performance React, Next.js, and Supabase products for founders, studios, and modern brands.";
+  "UI/UX Designer with a development background. I design simple, intuitive digital products — from research and wireframes to polished interfaces.";
 
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Fiza Khan",
-  url: SITE_URL,
-  jobTitle: "Independent Web Developer & Designer",
+  name: SITE.name,
+  url: SITE.siteUrl,
+  jobTitle: SITE.role,
   description: DESCRIPTION,
-  email: "mailto:fiza.tech@outlook.com",
-  image: `${SITE_URL}${ogImage}`,
-  sameAs: [
-    "https://www.linkedin.com/in/fiza-kh/",
-    "https://www.instagram.com/fzk.dev/",
-    "https://github.com/fiza-khan15",
+  email: `mailto:${SITE.email}`,
+  image: `${SITE.siteUrl}${ogImage}`,
+  sameAs: [SITE.social.linkedin, SITE.social.instagram, SITE.social.github],
+  knowsAbout: [
+    "User Experience Design",
+    "User Interface Design",
+    "Product Design",
+    "Wireframing",
+    "Prototyping",
+    "Design Systems",
+    "Figma",
   ],
-  knowsAbout: ["React", "Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Web Performance", "SEO"],
 };
 
 export const Route = createFileRoute("/")({
@@ -38,29 +43,25 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "Fiza Khan, web developer, freelance developer, React developer, Next.js, Supabase, web design, portfolio",
+          "Fiza Khan, UI designer, UX designer, product designer, Figma, design systems, portfolio, user experience",
       },
-      { name: "author", content: "Fiza Khan" },
+      { name: "author", content: SITE.name },
       { name: "robots", content: "index, follow" },
-
-      // Open Graph
       { property: "og:type", content: "website" },
-      { property: "og:url", content: SITE_URL },
+      { property: "og:url", content: SITE.siteUrl },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:image", content: `${SITE_URL}${ogImage}` },
-      { property: "og:image:alt", content: "Selected work by Fiza Khan — independent web developer" },
-      { property: "og:site_name", content: "Fiza Khan" },
+      { property: "og:image", content: `${SITE.siteUrl}${ogImage}` },
+      { property: "og:image:alt", content: `Selected product design work by ${SITE.name}` },
+      { property: "og:site_name", content: SITE.name },
       { property: "og:locale", content: "en_US" },
-
-      // Twitter
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: TITLE },
       { name: "twitter:description", content: DESCRIPTION },
-      { name: "twitter:image", content: `${SITE_URL}${ogImage}` },
-      { name: "twitter:image:alt", content: "Selected work by Fiza Khan" },
+      { name: "twitter:image", content: `${SITE.siteUrl}${ogImage}` },
+      { name: "twitter:image:alt", content: `Selected product design work by ${SITE.name}` },
     ],
-    links: [{ rel: "canonical", href: SITE_URL }],
+    links: [{ rel: "canonical", href: SITE.siteUrl }],
     scripts: [
       {
         type: "application/ld+json",
@@ -76,9 +77,10 @@ function Index() {
       <Nav />
       <main id="main">
         <Hero />
+        <About />
+        <Skills />
         <Works />
-        <Services />
-        <WhyMe />
+        <Process />
       </main>
       <Contact />
     </div>

@@ -1,14 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { projects } from "@/data/projects";
+import { SITE } from "@/data/site";
 
 export const Route = createFileRoute("/sitemap.xml")({
   component: SitemapXml,
 });
 
 function SitemapXml() {
-  const baseUrl = "https://mehmettahatmert.com";
+  const baseUrl = SITE.siteUrl;
   const today = new Date().toISOString().split("T")[0];
 
-  const pages = [{ path: "", priority: "1.0", changefreq: "weekly" }];
+  const pages = [
+    { path: "", priority: "1.0", changefreq: "weekly" },
+    ...projects.map((p) => ({
+      path: `/work/${p.slug}`,
+      priority: "0.8",
+      changefreq: "monthly" as const,
+    })),
+  ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
