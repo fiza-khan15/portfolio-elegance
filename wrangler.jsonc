@@ -3,7 +3,6 @@
   "name": "fk-portfolio",
   "compatibility_date": "2026-04-20",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "@tanstack/react-start/server-entry", // <--- CHANGE THIS
   "observability": {
     "enabled": true
   }
