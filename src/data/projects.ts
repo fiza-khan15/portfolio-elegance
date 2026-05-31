@@ -153,42 +153,42 @@ export const projects: CaseStudy[] = [
   },
   {
     slug: "fesign-cad",
-    title: "Fesign CAD Analytics",
-    category: "SaaS Product Design",
+    title: "Fesign Weight Calculator",
+    category: "Product Design · Utility Web Application",
     year: "2024",
     img: work4,
     liveUrl: "https://fesgin-app.onrender.com/",
     overview:
-      "Fesign is a CAD analytics dashboard for engineering teams. The challenge was making complex project data readable and actionable for daily use.",
+      "Fesign is a jewelry weight calculator designed for retailers and manufacturers who need quick and reliable weight estimates. The goal was to simplify a process that is often performed manually during pricing and product evaluation.",
     problem:
-      "Engineering dashboards often surface every available metric at once. This creates a dense interface that slows down experienced users and overwhelms new ones — making it harder to find what's relevant without training.",
+      "Jewelry retailers often calculate metal weights manually or rely on spreadsheets and reference charts. This slows down pricing discussions and increases the chance of calculation mistakes. The challenge was creating a tool that could deliver fast estimates without overwhelming users with unnecessary inputs.",
     goal:
-      "Design a dashboard that surfaces the right data at the right time, with a clear path to deeper detail when needed.",
+      "Design a focused, single-task tool that guides users through entering specifications and receiving an instant weight estimate — fast enough for use during customer interactions.",
     research:
-      "I reviewed common engineering dashboard workflows and analysed how industrial software typically presents project status, alerts, and reporting information. The consistent pattern in well-regarded tools was a clear hierarchy: status at a glance, then drill-down on demand — rather than exposing all data on a single view.",
+      "I reviewed common jewelry weight calculation workflows and existing online calculators. Many tools required excessive inputs or displayed too much information at once. The opportunity was to create a focused experience that guides users through a single task: entering specifications and receiving an instant weight estimate.",
     userFlow:
-      "Login → project overview → detail view → export or share. Secondary flows for settings and team management remain accessible but stay out of the primary daily path.",
+      "Open Calculator → Select Metal Type → Choose Purity → Enter Dimensions → View Weight Estimate. The flow was intentionally kept short to support quick use during customer interactions and pricing discussions.",
     wireframes:
-      "Dashboard layouts were sketched with a primary status panel and secondary detail panels. A sidebar nav was tested against top tabs — sidebar performed better for this many sections because labels stay visible as users move between views.",
+      "Early wireframes explored different ways of organising inputs. I considered a step-by-step flow against a grouped form layout. The grouped layout worked better because users could review all inputs at once before calculating.",
     finalUi:
-      "Neutral UI chrome lets data colours carry meaning. Charts use consistent scales across views. Empty states explain what to do next rather than displaying blank space.",
+      "The final interface focuses on clarity and speed. Inputs are organised logically, labels are easy to scan, and the result appears immediately after calculation. The design minimises distractions so users can complete calculations quickly without learning a complex system.",
     designDecisions: [
-      "Grouped metrics by the decision they support, not by data source.",
-      "Used progressive disclosure — summary first, detail on interaction.",
-      "Standardised chart types so users learn the visual pattern once and apply it across the dashboard.",
-      "Designed empty and error states alongside the main flows, not as an afterthought.",
+      "Reduced the experience to a single screen to avoid unnecessary navigation.",
+      "Grouped inputs in the same order users typically perform calculations.",
+      "Displayed results immediately to reduce waiting and repeated actions.",
+      "Used clear labels and spacing to reduce input mistakes during fast-paced use.",
     ],
     outcome:
-      "The dashboard gives engineering teams a daily starting point without requiring multiple tools or tabs. Designed onboarding guidance to help new users understand the dashboard structure quickly.",
+      "The final tool provides a faster and more structured alternative to manual calculations while remaining simple enough for everyday retail use. The interface supports quick estimates without requiring users to switch between multiple tools or references.",
     reflection:
-      "SaaS dashboard design is largely about what not to show by default. The research phase made clear that a smaller default view — with depth available on demand — reduces the learning curve without hiding functionality.",
+      "The challenge wasn't adding more functionality — it was deciding what to remove. Keeping the experience focused on one task made the tool easier to understand, faster to use, and more practical in real-world scenarios.",
     cardSummary: {
-      overview: "A CAD analytics dashboard for engineering teams who need clarity, not clutter.",
-      problem: "Displaying too many metrics at once made the interface hard to navigate.",
-      goal: "Surface what matters daily, with depth available when needed.",
-      process: "Reviewed engineering dashboard patterns, mapped workflows, iterated on information hierarchy.",
-      outcome: "A scannable dashboard with meaningful drill-down paths.",
-      learnings: "Default views should reflect what users need most often, not everything the system can show.",
+      overview: "A utility tool designed to help jewelry retailers calculate metal weight quickly and accurately.",
+      problem: "Manual calculations and reference charts slow down pricing discussions and introduce errors.",
+      goal: "Deliver fast, reliable weight estimates through a focused, single-screen experience.",
+      process: "Reviewed existing calculator workflows, tested input groupings, simplified to one screen.",
+      outcome: "A faster alternative to manual calculation that works within real retail workflows.",
+      learnings: "Utility tools benefit most from restraint — one task done well is enough.",
     },
   },
 ];
