@@ -6,6 +6,4 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 // nitro: true generates dist/server/wrangler.json for Cloudflare Workers deploy.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
-export default defineConfig({
-  nitro: true,
-});
+export default defineConfig({});

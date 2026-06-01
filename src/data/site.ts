@@ -1,8 +1,10 @@
+import resumeAsset from "@/assets/Fiza_Khan_UIUX.pdf.asset.json";
+
 export const SITE = {
   name: "Fiza Khan",
   role: "UI/UX & Product Designer",
   email: "fiza.tech@outlook.com",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: resumeAsset.url,
   siteUrl: "https://2b163f84-2c3d-48d8-897e-3ebbabfbcc2f.lovable.app",
   social: {
     linkedin: "https://www.linkedin.com/in/fiza-kh/",
